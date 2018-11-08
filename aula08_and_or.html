@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Aula 08 - AND/OR</title>
+    <script>
+      /*
+      ## Tabela Verdade ##########
+      AND - &&
+      V + F = F
+      F + V = F
+      V + V = V
+      F + F = F
+
+      OR - ||
+      V + F = V
+      F + V = V
+      V + V = V
+      F + F = F
+      ############################
+
+      Vitória => >=30 && <=40 || >=70 && <=80
+      */
+
+
+      var pontos=prompt("Digite o primeiro valor:", "Digite o valor aqui");
+
+      if (((pontos >= 30)&&(pontos<=40))||((pontos>=70)&&(pontos<=80))) {
+        document.write("Ganhou, maluco!");
+      }else {
+        document.write("Perdeu, playboy!!!");
+      }
+
+    </script>
+  </head>
+
+
+  <body>
+
+
+  </body>
+</html>
