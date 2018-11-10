@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Aula 12 - SWITCH/CASE</title>
+    <script>
+
+    var pontos=prompt("Quantos pontos?");
+    var pos,msg;
+
+    if (pontos >= 1000) {
+      pos = 1;
+    } else if (pontos >= 800) {
+      pos = 2;
+    } else if (pontos >= 600){
+      pos = 3;
+    } else {
+      pos = 0;
+    }
+
+
+
+    switch (pos) {
+      case 1:
+        msg="Primeiro lugar<br>Medalha de Ouro";
+        break;
+      case 2:
+        msg="Segundo lugar<br>Medalha de Prata";
+        break;
+      case 3:
+        msg="Terceiro lugar<br>Medalha de Bronze";
+        break;
+      default:
+        msg="Não foi ao pódio<br>Não obteve medalha";
+      }
+
+      switch (pos) {
+        case 1:
+        case 2:
+        case 3:
+          msg+="<br>Subiu ao pódio";
+          break;
+        default:
+        // o sinal de mais(+), indica concatenação da variável
+        // o resultado do primeiro switch é appendado ao segundo
+          msg+="<br>Não obteve colocação";
+        }
+
+      document.write(msg);
+    </script>
+  </head>
+
+
+  <body>
+
+
+  </body>
+</html>
