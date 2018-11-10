@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Aula 11 - BLOCOS DE COMANDOS</title>
+    <script>
+
+    /*
+    aprovado    >=60
+    recuperação >=40 && <60
+    reprovado   <40
+    */
+    var nota=prompt('Digite aqui a nota');
+    var res;
+
+    // se o bloco só tem 1 comando, não precisa de chaves
+    if (nota >= 70) {
+      res="Aluno aprovado";
+      document.write(res)
+      alert(res)
+    } else if (nota >= 40) {
+      res="Aluno em recuperação";
+      document.write(res)
+      alert(res)
+    } else {
+      res="Aluno reprovado";
+      document.write(res)
+      alert(res)
+    }
+
+    </script>
+  </head>
+
+
+  <body>
+
+
+  </body>
+</html>
