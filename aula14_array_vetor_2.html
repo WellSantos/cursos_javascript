@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Aula 14 - ARRAY/VETOR(Parte 2)</title>
+    <script>
+
+      /*
+      Métodos da classe ARRAY
+      push - insere elementos no final do array
+      unshift - insere elementos no início do array
+      pop - remove elementos do final do array
+      shift - remove elementos do início do array
+      splice - remove elementos de qualquer posição do array
+      */
+
+      var mochila=[];
+      mochila.push("Faca");
+      mochila.push("Corda");
+      mochila.push("Pederneira");
+      mochila.push("Chave");
+      mochila.push("Lanterna");
+      mochila.unshift("Pedra");
+
+      //mochila.pop();
+      //mochila.shift();
+      mochila.splice(2,3); //(posição no array,quantidade a partir da posição do array)
+
+
+      document.write(mochila[0]+"<br>");
+      document.write(mochila[1]+"<br>");
+      document.write(mochila[2]+"<br>");
+      document.write(mochila[3]+"<br>");
+      document.write(mochila[4]+"<br>");
+      document.write(mochila[5]+"<br>");
+
+
+
+
+    </script>
+  </head>
+
+
+  <body>
+
+
+  </body>
+</html>
