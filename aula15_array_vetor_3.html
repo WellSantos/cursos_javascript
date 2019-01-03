@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Aula 15 - ARRAY/VETOR(Parte 3)</title>
+    <script>
+
+      /*
+      Métodos da classe ARRAY
+      indexOf = pesquisa se um elemento está dentro do array
+      sort = ordena o array
+      reverse = inverte a ordem dos elementos no array
+      concat = concatena dois arrays em um só
+      join = junta todos os elementos do array em uma única variável em forma de string, separadas por vírgula
+      */
+
+      var mochila1=[],mochila2=[],pos;
+      var num=[5,8,4,9,7,6,3,0,2,1];
+      var numeros;
+
+
+      mochila1.push("Faca");
+      mochila1.push("Corda");
+      mochila1.push("Pederneira");
+      mochila1.push("Chave");
+      mochila1.push("Lanterna");
+      mochila1.push("Pedra");
+
+      mochila2.push("Ovo");
+      mochila2.push("Carne");
+      mochila2.push("Refrigerante");
+      mochila2.push("Leite");
+      mochila2.push("Pão");
+      mochila2.push("Manteiga");
+
+      mochila=mochila1.concat(mochila2);
+
+      document.write(mochila[0]+"<br>");
+      document.write(mochila[1]+"<br>");
+      document.write(mochila[2]+"<br>");
+      document.write(mochila[3]+"<br>");
+      document.write(mochila[4]+"<br>");
+      document.write(mochila[5]+"<br>");
+      document.write(mochila[6]+"<br>");
+      document.write(mochila[7]+"<br>");
+      document.write(mochila[8]+"<br>");
+      document.write(mochila[9]+"<br>");
+
+      document.write("Tamanho da mochila1"+mochila1.length+"<br>");
+      document.write("Tamanho da mochila2"+mochila2.length+"<br>");
+      document.write("Tamanho da mochila"+mochila.length+"<br>");
+
+      pos = (mochila.indexOf("Lanterna"));
+
+      if (pos < 0){
+        document.write("Ítem não está na mochila");
+      }else{
+        document.write("Ítem está na mochila.<br>Posição: "+pos)
+      }
+
+
+      num.sort();
+      num.reverse();
+
+      //numeros=num.join();
+      //document.write(numeros+"<br>");
+
+      document.write(num[0]+"<br>");
+      document.write(num[1]+"<br>");
+      document.write(num[2]+"<br>");
+      document.write(num[3]+"<br>");
+      document.write(num[4]+"<br>");
+      document.write(num[5]+"<br>");
+      document.write(num[6]+"<br>");
+      document.write(num[7]+"<br>");
+      document.write(num[8]+"<br>");
+      document.write(num[9]+"<br>");
+
+
+    </script>
+  </head>
+
+
+  <body>
+
+
+  </body>
+</html>
